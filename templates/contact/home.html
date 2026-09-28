@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}
+	Ana Səhifə
+{% endblock %}
+
+{% block content %}
+        <div class="card">
+            <h1>Contact Us</h1>
+
+        <p>
+            Suallarınız və ya rəyiniz var? Bizimlə əlaqə saxlayın.
+        </p>
+
+        <a
+            class="button"
+            href="{% url 'contact' %}"
+        >
+            Contact formuna keç →
+        </a>
+        </div>
+{% endblock %}

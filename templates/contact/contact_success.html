@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Contact Success
+{% endblock %}
+
+{% block content %}
+    <div class="card">
+        <p>
+            Thank you {{ name }}. We have received your feedback.
+        </p>
+
+        <div class="note-info">
+            <p>
+                <a href="{% url 'contact' %}">Send new feedback</a>
+            </p>
+            <p>
+                <a href="{% url 'home' %}">Return to home page</a>
+            </p>
+        </div>
+    </div>
+{% endblock %}
